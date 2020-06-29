@@ -1,21 +1,21 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  frameRate(40);
-  somDoJogo.loop();
+  frameRate(40)
+  //somDoJogo.loop();
   jogo = new Jogo();
   telaInicial = new TelaInicial();
   jogo.setup();
   cenas = {
     jogo,
-    telaInicial,
+    telaInicial
   };
-  botaoGerenciador = new BotaoGerenciador('Iniciar', width / 2, height / 2);
+  botaoGerenciador = new BotaoGerenciador('Iniciar', width/2, height/2);
 }
-
+ 
 function keyPressed() {
-  jogo.keyPressed(key);
+ jogo.keyPressed(key);
 }
 
-function draw() {
+function draw() { 
   cenas[cenaAtual].draw();
-}
+} 
