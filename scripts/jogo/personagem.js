@@ -71,7 +71,10 @@ class Personagem extends Animacao {
     return colisao;
 
   }
-
-
-
+  
+  Recomecar() {
+    pontuacao.pontos = 0;
+    personagem.y = height - personagem.altura - personagem.variacaoY;
+    vida.reiniciaVida()
+  }
 }

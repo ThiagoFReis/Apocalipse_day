@@ -20,6 +20,10 @@ class Vida {
     
   }
   
+  reiniciaVida() {
+    this.vidas = this.inicial
+  }
+  
   ganhaVida() {
     if(this.vidas <= this.total) {
       this.vidas++

@@ -1,9 +1,11 @@
 let imagemCenario;
 let imagemPersonagem;
 let imagemInimigo;
-let imagemInimigoGrande;
 let imagemInimigoVoador;
 let imagemTelaInicial;
+let imagemKidZombie;
+let imagemZombieWalk;
+let imagemRobotZombie
 
 let imagemVida;
 let fonteTelaInicial;
@@ -19,12 +21,16 @@ let vida;
 
 let cenario;
 let somDoJogo; 
+let somGameOver;
 let personagem;
+let kidZombie;
+let zombieWalk;
+let robotZombie;
 let inimigo;
-let inimigoGrande;
 let inimgoVoador;
 let pontuacao;
 let gameOver;
+let optionGameOver;
 
 const matrizInimigo = [
   [0, 0],
@@ -74,35 +80,55 @@ const matrizPersonagem = [
       [440, 810],
       [660, 810]
      ]
-const matrizInimigoGrande = [
+const matrizKidZombie = [
   [0,0],
-  [400,0],
-  [800,0],
-  [1200,0],
-  [1600,0],
+  [150,0],
+  [300,0],
+  [450,0],
+  [0,200],
+  [150,200],
+  [300,200],
+  [450,200],
   [0,400],
-  [400,400],
-  [800,400],
-  [1200, 400],
-  [1600, 400],
-  [0,800],
-  [400, 800],
-  [800, 800],
-  [1200, 800],
-  [1600, 800],
-  [0, 1200],
-  [400, 1200],
-  [800, 1200],
-  [1200, 1200],
-  [1600, 1200], 
-  [0, 1600],
-  [400, 1600],
-  [800, 1600],
-  [1200, 1600],
-  [1600, 1600],
-  [0, 2000],
-  [400, 2000],
-  [800, 2000],
+  [150,400]
+]
+const matrizZombieWalk = [
+  [0,0],
+  [200,0],
+  [400,0],
+  [0,336],
+  [200,336],
+  [400,336]
+]
+const matrizRobotZombie = [
+  [0,0],
+  [220,0],
+  [440,0],
+  [660,0],
+  [880,0],
+  [1100,0],
+  [0,275],
+  [220,275],
+  [440,275],
+  [660,275],
+  [880,275],
+  [1100,275],
+  [0,550],
+  [220,550],
+  [440,550],
+  [660,550],
+  [880,550],
+  [1100,550],
+  [0,825],
+  [220,825],
+  [440,825],
+  [660,825],
+  [880,825],
+  [1100,825],
+  [0,1100],
+  [220,1100],
+  [440,1100],
+  [660,1100]
 ]
 const matrizInimigoVoador = [
   [0,0],

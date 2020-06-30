@@ -10,13 +10,17 @@ class Jogo {
     pontuacao = new Pontuacao();
     vida = new Vida(fita.configuracoes.vidaMaxima, fita.configuracoes.vidaInicial);
 
-    personagem = new Personagem(matrizPersonagem, imagemPersonagem, 0, 30, 110, 135, 220, 270);
-    const inimigo = new Inimigo(matrizInimigo, imagemInimigo, width - 52, 30, 52, 52, 104, 104, 10);
+    personagem = new Personagem(matrizPersonagem, imagemPersonagem, 0, 60, 110, 135, 220, 270);
+    const kidZombie = new Inimigo(matrizKidZombie, imagemKidZombie, width -52, 60, 90, 115, 150, 200);
+    const zombieWalk = new Inimigo(matrizZombieWalk, imagemZombieWalk, width -52, 60, 100, 168, 200, 336);
+    const robotZombie = new Inimigo(matrizRobotZombie, imagemRobotZombie, width -52, 60, 110,138, 220, 275);
+    const inimigo = new Inimigo(matrizInimigo, imagemInimigo, width - 52, 60, 52, 52, 104, 104, 10);
     const inimigoVoador = new Inimigo(matrizInimigoVoador, imagemInimigoVoador, width - 52, 200, 100, 75, 200, 150, 10);
-    const inimigoGrande = new Inimigo(matrizInimigoGrande, imagemInimigoGrande, width, 0, 200, 200, 400, 400, 15)
 
+    inimigos.push(robotZombie)
+    inimigos.push(zombieWalk)
+    inimigos.push(kidZombie)
     inimigos.push(inimigo)
-    inimigos.push(inimigoGrande)
     inimigos.push(inimigoVoador)
 
   }
@@ -25,7 +29,15 @@ class Jogo {
     if (key === 'ArrowUp') {
       personagem.pula()
       somDoPulo.play()
-    }       
+    }
+    if (optionGameOver==true && keyCode==ENTER) {   
+      optionGameOver = false;
+      personagem.Recomecar();
+      personagem.tornarInvencivel();
+      gameOverSom.stop()
+      somDoJogo.loop()
+      loop();
+    }
   }
 
   draw() {  
@@ -63,7 +75,8 @@ class Jogo {
       image(imagemGameOver, width/2 - 200, height - 400)
       noLoop()
       somDoJogo.stop ();
-       
+      gameOverSom.loop();
+      optionGameOver = true;
     }
    } 
   }
