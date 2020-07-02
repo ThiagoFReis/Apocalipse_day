@@ -8,6 +8,6 @@ Game 2D desenvolvido em JavaScript com a biblioteca P5.js.
 ![image](https://user-images.githubusercontent.com/63068481/86370375-07113900-bc56-11ea-8038-143533d46d46.png)
 
 
-Link para jogar: https://editor.p5js.org/ThiagoFReis/full/uZ1nn_vN- 
+**Link para jogar:** https://editor.p5js.org/ThiagoFReis/full/uZ1nn_vN-
 
 `Criado durante a semana Imersão Game Dev da Alura.`
