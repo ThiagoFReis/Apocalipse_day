@@ -1,12 +1,12 @@
 function preload () {  
-  imagemCenario = loadImage('imagens/cenario/cenario.png');
-  imagemPersonagem = loadImage('imagens/personagem/correndo.png');
-  imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
-  imagemKidZombie = loadImage('imagens/inimigos/kid.png');
-  imagemZombieWalk = loadImage('imagens/inimigos/Zombie-Walk.png');
-  imagemRobotZombie = loadImage('imagens/inimigos/RobotZombie.png');
-  imagemInimigoVoador = loadImage('imagens/inimigos/gotinha-voadora.png');
-  imagemTelaInicial = loadImage('imagens/cenario/telaInicial.png');
+  imagemCenario = loadImage('imagens/assets/cenario/cenario.png');
+  imagemPersonagem = loadImage('imagens/assets/personagem/correndo.png');
+  imagemInimigo = loadImage('imagens/assets/inimigos/gotinha.png');
+  imagemKidZombie = loadImage('imagens/assets/inimigos/kid.png');
+  imagemZombieWalk = loadImage('imagens/assets/inimigos/Zombie-Walk.png');
+  imagemRobotZombie = loadImage('imagens/assets/inimigos/RobotZombie.png');
+  imagemInimigoVoador = loadImage('imagens/assets/inimigos/gotinha-voadora.png');
+  imagemTelaInicial = loadImage('imagens/assets/cenario/telaInicial.png');
   imagemVida = loadImage('imagens/assets/coracao.png');
   imagemGameOver = loadImage('imagens/assets/gameOver.png');
   fonteTelaInicial = loadFont('imagens/assets/fonteTelaInicial.otf');

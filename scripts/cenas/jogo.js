@@ -72,7 +72,7 @@ class Jogo {
     vida.perdeVida();
     personagem.tornarInvencivel();
     if(vida.vidas === 0) {
-      image(imagemGameOver, width/2 - 200, height - 400)
+      image(imagemGameOver, width/2 - 300, height - 400)
       noLoop()
       somDoJogo.stop ();
       gameOverSom.loop();
