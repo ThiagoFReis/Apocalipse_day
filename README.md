@@ -1,5 +1,5 @@
 # Apocalipse DAY :video_game:
-Game 2D desenvolvido em JavaScript com a biblioteca P5.js.
+Game 2D desenvolvido em JavaScript utilizando a biblioteca P5.js.
 ## Resultados do game:
 ![TelaInicial](https://user-images.githubusercontent.com/63068481/86367666-a2081400-bc52-11ea-83f6-d78ed652527b.png)
 
